@@ -1,12 +1,16 @@
 .app-container {
     display: flex;
+    margin-left: 200px; /* 180px сайдбар + 20px отступ */
+    width: calc(100% - 200px);
+    min-height: 100vh;
 }
 
+
 .main-content {
-    margin-left: 180px;
-    width: calc(100% - 180px);
-    min-height: 100vh;
-    background-color: white;
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f5f5fe;
+    box-sizing: border-box;
 }
 
 .page-header {
@@ -16,6 +20,12 @@
 
 .page-header h1 {
     margin: 0;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.orders-title {
+    margin: 0 0 20px 0;
     font-size: 24px;
     font-weight: 500;
 }

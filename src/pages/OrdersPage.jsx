@@ -1,4 +1,3 @@
-// src/pages/OrdersPage.js
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Sidebar from '../components/Sidebar';
@@ -26,31 +25,45 @@ const OrdersPage = () => {
 
             // Эмуляция запроса к API
             setTimeout(() => {
-                // Тестовые данные
-                const mockOrders = searchValue ? [
+                // Мок данных
+                const mockOrders = [
                     {
                         id: 1,
-                        orderNumber: '12345',
+                        orderNumber: '55501',
                         status: 'Доставлен',
-                        createdAt: '2025-03-15',
-                        customerPhone: '+7 (999) 123-45-67',
-                        compensation: 'Нет',
-                        deliveryType: 'Курьер',
-                        delay: 'Нет',
-                        deliveryAddress: 'ул. Примерная, 10'
+                        createdDate: '25.03.25',
+                        createdTime: '13:08',
+                        customerPhone: '0123456789',
+                        compensation: '—',
+                        deliveryType: 'Прямая',
+                        delay: '7 мин.',
+                        deliveryAddress: 'Москва, улица Зеленая, 15, 3'
                     },
                     {
                         id: 2,
-                        orderNumber: '12346',
-                        status: 'В пути',
-                        createdAt: '2025-03-20',
-                        customerPhone: '+7 (999) 123-45-67',
-                        compensation: 'Нет',
-                        deliveryType: 'Самовывоз',
-                        delay: '1 час',
-                        deliveryAddress: 'ул. Тестовая, 5'
+                        orderNumber: '7405',
+                        status: 'Доставлен',
+                        createdDate: '22.03.25',
+                        createdTime: '13:54',
+                        customerPhone: '0123456789',
+                        compensation: '—',
+                        deliveryType: 'Прямая',
+                        delay: '1 мин.',
+                        deliveryAddress: 'Москва, улица Заречная, 77, 85'
+                    },
+                    {
+                        id: 3,
+                        orderNumber: '480',
+                        status: 'Доставлен',
+                        createdDate: '29.07.24',
+                        createdTime: '18:47',
+                        customerPhone: '0123456789',
+                        compensation: '—',
+                        deliveryType: 'Прямая',
+                        delay: '15 мин.',
+                        deliveryAddress: 'Ижевск, улица Центральная, 56, 57'
                     }
-                ] : [];
+                ];
 
                 setOrders(mockOrders);
                 setLoading(false);
@@ -80,4 +93,3 @@ const OrdersPage = () => {
 };
 
 export default OrdersPage;
-
