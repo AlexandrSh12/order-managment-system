@@ -1,0 +1,231 @@
+.order-detail-header {
+    padding: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order-detail-header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.back-link {
+    color: #2196f3;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.order-status {
+    display: flex;
+    align-items: center;
+}
+
+.status-badge {
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.status-badge.доставлен {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+.status-badge.в.пути {
+    background-color: #e3f2fd;
+    color: #1565c0;
+}
+
+.status-badge.отменен {
+    background-color: #ffebee;
+    color: #c62828;
+}
+
+.order-detail-content {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.customer-info-column {
+    flex: 1;
+    max-width: 350px;
+}
+
+.order-card-column {
+    flex: 2;
+}
+
+.info-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    margin-bottom: 20px;
+}
+
+.info-card h3 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 8px;
+}
+
+.info-row {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.info-label {
+    flex: 1;
+    font-weight: 500;
+    color: #666;
+}
+
+.info-value {
+    flex: 2;
+}
+
+.order-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.order-card-header {
+    padding: 16px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.tabs {
+    display: flex;
+    gap: 16px;
+}
+
+.tab {
+    background: none;
+    border: none;
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    color: #666;
+    transition: color 0.3s;
+}
+
+.tab.active {
+    color: #2196f3;
+    font-weight: 500;
+}
+
+.tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: -16px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #2196f3;
+}
+
+.order-card-content {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.information-tab,
+.composition-tab {
+    height: 100%;
+}
+
+.info-section {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.info-section h4 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.info-item {
+    display: flex;
+}
+
+.info-item .info-label {
+    width: 200px;
+    flex: none;
+}
+
+.items-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.items-table th,
+.items-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.items-table th {
+    background-color: #f5f5f5;
+    font-weight: 500;
+}
+
+.items-table tfoot {
+    font-weight: bold;
+}
+
+.loading-container,
+.error-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.loading {
+    font-size: 18px;
+    color: #666;
+}
+
+.error-message {
+    text-align: center;
+}
+
+.error-message h2 {
+    color: #f44336;
+    margin-bottom: 16px;
+}
+
+.error-message .back-link {
+    display: inline-block;
+    margin-top: 16px;
+}
